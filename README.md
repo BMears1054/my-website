@@ -1,3 +1,2 @@
 # my-website
-This is a website detailing why I belive that Pokemon Black and White are the best games in the franchise.
-Might change the premise of this document to be about the different Shiny Hunting methods throughout the franchise.
+Changed to the different methods of shiny hunting throughout the franchise. Will probably add the in game events that give you a shiny, but not the mystery gift shinys.
