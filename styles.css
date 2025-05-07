@@ -12,6 +12,9 @@ body .h{
 #heading {
     font-variant: small-caps;
     font-size: 200%;
+    padding: 50px 150px 25px;
+    margin: 10px 150px 25px;
+    text-align: center;
 }
 p {
     color: rgb(78, 16, 70);
