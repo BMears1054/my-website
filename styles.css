@@ -62,14 +62,14 @@ nav ul li {
 nav ul li a {
   color: #144d4d;
   text-decoration: none;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-align: center;
 }
 nav ul li a:hover {
-  background-color: #ddd;
+  background-color: #a2bff3;
   color: black;
 }
-nav ul li a.active {
-  background-color: #66021b;
+nav ul li a.current {
+  background-color: #a2bff3;
   color: #144d4d;
 }

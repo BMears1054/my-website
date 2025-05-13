@@ -28,15 +28,16 @@ nav ul li {
 nav ul li a {
   color: #144d4d;
   text-decoration: none;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-align: center;
 }
 nav ul li a:hover {
-  background-color: #ddd;
+  background-color: #a2bff3;
   color: black;
 }
-nav ul li a.active {
-  background-color: #66021b;
+
+nav ul li a.current {
+  background-color: #a2bff3;
   color: #144d4d;
 }
 .container {
@@ -51,6 +52,22 @@ p {
     font-size: 150%;
     text-align: center;
 }
-#p2{
-    padding: 15px 0px 0px;
+.p2{
+  background: linear-gradient(120deg, #f5deb3, hsl(0, 0%, 96%)); 
+  border: 5px solid rgb(118, 36, 36);
+  padding: 15px 50px 15px;
+  margin: 0 auto;
+  border-radius: 50px;
+  text-align: center;
+  max-width: 50%;
+    /*padding: 15px 0px 0px;*/
+}
+.p1{
+  background: linear-gradient(120deg, #f5deb3, hsl(0, 0%, 96%)); 
+  border: 5px solid rgb(118, 36, 36);
+  padding: 15px 50px 15px;
+  margin: 0 auto;
+  border-radius: 50px;
+  text-align: center;
+  max-width: 50%;
 }
