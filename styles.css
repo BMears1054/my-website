@@ -76,12 +76,15 @@ nav ul li a.current {
   background-color: #a2bff3;
   color: #144d4d;
 }
-@media only screen and (max-width: 590px) {
+/* since my nav bar is in my header, i cant quite just shift the entire page over 10px, i have to shift the elements one or two at a time. or i could probably use a class. maybe ill do that acutally. */
+a{
+  padding-left: 10px;
+}
+/* once screen is less than 600px, box with zoruas on main page shifts to cover more of the available room (and not be as squished). */
+@media only screen and (max-width: 600px) {
 div.one{
   max-width: 70%;
 }
-}
-@media only screen and (max-width: 590px) {
   div{
     max-width: 70%;
   }
