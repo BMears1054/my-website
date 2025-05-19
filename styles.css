@@ -80,7 +80,7 @@ nav ul li a.current {
 a{
   padding-left: 10px;
 }
-.container{
+#container{
 display: block;
 margin: 0 auto;
 width: 300%;
