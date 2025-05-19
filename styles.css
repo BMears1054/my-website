@@ -80,13 +80,7 @@ nav ul li a.current {
 a{
   padding-left: 10px;
 }
-#container{
-display: block;
-margin: 0 auto;
-width: 300%;
-max-width: 100%;
-height: auto;
-}
+
 /* once screen is less than 600px, box with zoruas on main page shifts to cover more of the available room (and not be as squished). */
 @media only screen and (max-width: 600px) {
 div.one{
