@@ -6,6 +6,17 @@
 .container {
   columns: 2;
   column-gap: 20px;
+  display: flex;
+  flex-direction: row; /* side-by-side layout */
+  justify-content: space-between; /* spread them out */
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+.flex-item {
+  flex: 1;
+  min-width: 300px;
+  box-sizing: border-box;
 }
 p {
     color: rgb(78, 16, 70);
@@ -30,9 +41,8 @@ p {
   max-width: 90%;
 }
 /* once screen is less than 915px, changes from 2 column layout to 1 column layout */
-@media only screen and (max-width: 915px) {
+@media (max-width: 915px) {
   .container {
-    columns: 1;
-    column-gap: 20px;
+      flex-direction: column;
   }
 }
