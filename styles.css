@@ -90,3 +90,9 @@ div.one{
     max-width: 70%;
   }
 }
+@media (max-width: 1280px) {
+  #heading {
+   font-size: 110%; /* min 1.5rem, preferred 5vw, max 3rem */
+  overflow: hidden;
+  }
+}
