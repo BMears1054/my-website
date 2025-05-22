@@ -8,7 +8,7 @@ html, body {
 }
 body{
     color:#144d4d;
-    background-color:#f5deb3 ;
+    background-color:#f5deb3;
 }
 body .h{
     font-variant: small-caps;
@@ -42,7 +42,7 @@ a:hover{
 li > h3{
     font-size: 125%;
 }
-div.one{
+.one{
     background: linear-gradient(120deg, #f5deb3, hsl(0, 0%, 96%)); 
     border: 5px solid rgb(118, 36, 36);
     padding: 15px 50px 50px;
@@ -80,7 +80,49 @@ nav ul li a.current {
 a{
   padding-left: 10px;
 }
+.grid-container {
+  /* Insert grid properties here!*/
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+grid-template-areas: "item1 item1"
+                     "item2 item3";
+  gap: 2em;
+  padding: 20px;
+  
+}
 
+.grid-item{
+  background-color: #f0f0f0;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+  grid-area: topitem;
+  
+}
+
+#item1 {grid-area: item1;}
+#item2 {grid-area: item2;}
+#item3 {grid-area: item3;}
+.grid-item h2 {
+  color: #9d4ad1;
+  margin-top: 0;
+}
+
+.grid-item p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 /* once screen is less than 600px, box with zoruas on main page shifts to cover more of the available room (and not be as squished). */
 @media only screen and (max-width: 600px) {
 div.one{
