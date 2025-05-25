@@ -7,4 +7,42 @@ max-width: 100%;
 height: auto;
 }
 
-
+/** uses a flex box to lay out the different paragraphs and a media query to adjust the layout when the screen gets too small.**/
+.container {
+  columns: 3;
+  column-gap: 20px;
+  display: flex;
+  flex-direction: row; /* side-by-side layout */
+  flex-wrap: wrap;
+  justify-content: space-between; /* spread them out */
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+.flex-item {
+  flex: 1;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+p {
+    color: rgb(78, 16, 70);
+    font-size: 105%;
+}
+#headingp{
+    font-size: 150%;
+    text-align: center;
+}
+.p1, .p2, .p3{
+  flex: 1 1 auto;
+  padding: 15px 5px 15px;
+  margin: 0 auto;
+  
+  text-align: center;
+  max-width: 90%;
+}
+/* once screen is less than 915px, changes from 2 column layout to 1 column layout */
+@media (max-width: 915px) {
+    .container {
+        flex-direction: column;
+    }
+}
