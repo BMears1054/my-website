@@ -48,7 +48,7 @@ p {
   max-width: 90%;
 }
 /* once screen is less than 915px, changes from 2 column layout to 1 column layout */
-@media (max-width: 915px) {
+@media (max-width: 1205px) {
   .container {
       flex-direction: column;
   }
