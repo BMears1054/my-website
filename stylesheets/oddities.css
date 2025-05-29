@@ -18,6 +18,13 @@
     flex: 1;
     min-width: 300px;
     box-sizing: border-box;
+    background-color: #f0f0f0;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
 p {
@@ -42,7 +49,7 @@ p {
 }
 
 /* once screen is less than 915px, changes from 2 column layout to 1 column layout */
-@media (max-width: 915px) {
+@media (max-width: 1400px) {
     .container {
         flex-direction: column;
     }

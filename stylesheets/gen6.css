@@ -17,6 +17,13 @@
   flex: 1;
   min-width: 300px;
   box-sizing: border-box;
+  background-color: #f0f0f0;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 p {
     color: rgb(78, 16, 70);
