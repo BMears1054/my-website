@@ -53,4 +53,8 @@ p {
     .container {
         flex-direction: column;
     }
+    #heading {
+        font-size: 180%; /* min 1.5rem, preferred 5vw, max 3rem */
+       overflow: hidden;
+       }
 }
