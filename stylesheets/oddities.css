@@ -3,29 +3,27 @@
 .container {
     columns: 3;
     column-gap: 20px;
-    display: flex;
-    flex-direction: row;
-    /* side-by-side layout */
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* spread them out */
-    align-items: flex-start;
     gap: 20px;
     padding: 20px;
-}
-
-.flex-item {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+  grid-template-areas: "item1 item2"
+                       "item3 .";
+  }
+  .flex-item {
     flex: 1;
     min-width: 300px;
     box-sizing: border-box;
     background-color: #f0f0f0;
-  padding: 20px;
-  font-size: 20px;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    
+  }
 
 p {
     color: rgb(78, 16, 70);
@@ -48,10 +46,17 @@ p {
     max-width: 90%;
 }
 
+#item1 {grid-area: item1;}
+#item2 {grid-area: item2;}
+#item3 {grid-area: item3;}
 /* once screen is less than 915px, changes from 2 column layout to 1 column layout */
 @media (max-width: 1400px) {
     .container {
-        flex-direction: column;
+        grid-template-rows: auto ;
+        grid-template-columns: auto ;
+       grid-template-areas: "item1"
+                            "item2"
+                            "item3";
     }
     #heading {
         font-size: 180%; /* min 1.5rem, preferred 5vw, max 3rem */
