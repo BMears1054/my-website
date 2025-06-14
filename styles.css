@@ -1,105 +1,121 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
+
 * {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-   /** font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;**/
-    
+  /** font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;**/
+
 }
-body{
-    color:#144d4d;
-    background-color:#f5deb3;
+
+body {
+  color: #144d4d;
+  background-color: #f5deb3;
 }
-body .h{
-    font-variant: small-caps;
+
+body .h {
+  font-variant: small-caps;
 }
-#right{
-    float: left;
+/*______________ zorua images homepage _______________ */
+#right {
+  float: left;
 }
-#left{
-    float: right;
+
+#left {
+  float: right;
 }
+/*______________ Navigation Bar + header _______________ */
 header {
-    background: linear-gradient(#f5deb3, #ffffff);
-    font-variant: small-caps;
-    font-size: 150%;
-    padding: 10px;
-    margin: 10px 0px 10px;
-    text-align: center;
-    border-bottom: 5px solid rgb(118, 36, 36);
-    width: 100%;
+  background: linear-gradient(#f5deb3, #ffffff);
+  font-variant: small-caps;
+  font-size: 150%;
+  padding: 10px;
+  margin: 10px 0px 10px;
+  text-align: center;
+  border-bottom: 5px solid rgb(118, 36, 36);
+  width: 100%;
 }
+
 p {
-    color: rgb(78, 16, 70);
-    font-size: 105%;
-    font-weight: 500;
+  color: rgb(78, 16, 70);
+  font-size: 105%;
+  font-weight: 500;
 }
 
 
-a:hover{
-    background-color: #ffebcd;
-    color: #000000;
+a:hover {
+  background-color: #ffebcd;
+  color: #000000;
 }
-li > h3{
-    font-size: 125%;
+
+li>h3 {
+  font-size: 125%;
 }
-.one{
-    background: linear-gradient(120deg, #f5deb3, hsl(0, 0%, 96%)); 
-    border: 5px solid rgb(118, 36, 36);
-    padding: 15px 50px 50px;
-    margin: 0 auto;
-    border-radius: 50px;
-    text-align: center;
-    max-width: 50%;
- }
- section{
+
+.one {
+  background: linear-gradient(120deg, #f5deb3, hsl(0, 0%, 96%));
+  border: 5px solid rgb(118, 36, 36);
+  padding: 15px 50px 50px;
+  margin: 0 auto;
+  border-radius: 50px;
+  text-align: center;
+  max-width: 50%;
+}
+
+section {
   padding-left: 10px;
- }
- nav ul {
+}
+
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 nav ul li {
   display: inline;
 }
+
 nav ul li a {
   color: #144d4d;
   text-decoration: none;
   padding: 10px 16px;
   text-align: center;
 }
+
 nav ul li a:hover {
   background-color: #e4e4e4;
   color: #000000;
 }
+
 nav ul li a.current {
   background-color: #e4e4e4;
   color: #000000;
 }
-/* since my nav bar is in my header, i cant quite just shift the entire page over 10px, i have to shift the elements one or two at a time. or i could probably use a class. maybe ill do that acutally. */
-a{
+/*__________________________________ */
+a {
   padding-left: 10px;
 }
-/* uses a grid layout to lay the page out in an asthetically pleasing way, with teh breif history pane at the top and everything else below it. */
+/*______________ General grid layout _______________ */
 .grid-container {
-  
+
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: 1fr 1fr;
-grid-template-areas: "item1 item1"
-                     "item2 item3"
-                     "item4 item5";
+  grid-template-areas: "item1 item1"
+    "item2 item3"
+    "item4 item5";
   gap: 2em;
   padding: 20px;
-  
+
 }
 
-.grid-item{
+.grid-item {
   background-color: #f0f0f0;
   padding: 20px;
   font-size: 20px;
@@ -108,18 +124,33 @@ grid-template-areas: "item1 item1"
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  
+
   grid-area: topitem;
-  
+
 }
 
-#item1 {grid-area: item1;}
-#item2 {grid-area: item2;}
-#item3 {grid-area: item3;}
-#item4 {grid-area: item4;}
-#item5 {grid-area: item5;}
+#item1 {
+  grid-area: item1;
+}
+
+#item2 {
+  grid-area: item2;
+}
+
+#item3 {
+  grid-area: item3;
+}
+
+#item4 {
+  grid-area: item4;
+}
+
+#item5 {
+  grid-area: item5;
+}
+
 .grid-item h2 {
-  
+
   margin-top: 0;
 }
 
@@ -128,56 +159,67 @@ grid-template-areas: "item1 item1"
   line-height: 1.6;
 }
 
-.h {text-align: center; }
+.h {
+  text-align: center;
+}
 
 .grid-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-
+ /*__________________________________ */
 /* once screen is less than 750px, box with zoruas on main page shifts to cover more of the available room (and not be as squished). */
 @media only screen and (max-width: 750px) {
-div.one{
-  max-width: 70%;
-}
+  div.one {
+    max-width: 70%;
+  }
 
 }
+
 @media (min-width: 320px) {
   #heading {
-   font-size: 110%; /* min 1.5rem, preferred 5vw, max 3rem */
-  overflow: hidden;
+    font-size: 110%;
+    /* min 1.5rem, preferred 5vw, max 3rem */
+    overflow: hidden;
   }
 }
+
 @media only screen and (min-width: 1170px) {
   #heading {
-   font-size: 180%; /* min 1.5rem, preferred 5vw, max 3rem */
-  overflow: hidden;
+    font-size: 180%;
+    /* min 1.5rem, preferred 5vw, max 3rem */
+    overflow: hidden;
   }
 }
+
 /* once screen is small enough, shift grid layout to one row and three column, for readability. */
 @media (max-width: 780px) {
-.grid-container {
-  grid-template-rows: auto ;
- grid-template-columns: auto ;
-grid-template-areas: "item1"
-                     "item2"
-                     "item3"
-                     "item4"
-                     "item5";
+  .grid-container {
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5";
+  }
 }
-}
+
 /* lowers heading size once more too keep things flush for nav bar. */
 @media (max-width: 719px) {
-#heading{
-  font-size: 90%;
+  #heading {
+    font-size: 90%;
+  }
 }
-}
+
 /* sets nav bar horizontal and makes header text smaller so that everything stays flush */
 @media (max-width: 600px) {
-nav ul li{ display: flex;
-flex-direction: column;
-}
-#heading{
-  font-size: 75%;
-}
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #heading {
+    font-size: 75%;
+  }
 }

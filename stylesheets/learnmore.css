@@ -1,18 +1,21 @@
+/*_________________Most changed grid layout (embeding videos was quite weird)_________________ */
 .grid-containerr {
   display: grid;
   gap: 2em;
   padding: 20px;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "item1 item2"
-        "item3 item4"
-        "item5 item6"
-        "item7 item8";
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "item1 item2"
+    "item3 item4"
+    "item5 item6"
+    "item7 item8";
 }
-#headingp{
-        font-size: 150%;
-    text-align: center;
+
+#headingp {
+  font-size: 150%;
+  text-align: center;
 }
+
 .grid-itemm {
   background: white;
   border: 1px solid #ccc;
@@ -25,10 +28,12 @@
   margin: 0 0 10px;
   font-size: 1.2em;
 }
+
 .aspect-ratio-16-9 {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 9 / 16 = 0.5625 = 56.25% */
+  padding-top: 56.25%;
+  /* 9 / 16 = 0.5625 = 56.25% */
   overflow: hidden;
 }
 
@@ -36,38 +41,61 @@
   width: 100%;
   height: 100%;
   border: none;
-    position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
 }
 
-#item1 {grid-area: item1;}
-#item2 {grid-area: item2;}
-#item3 {grid-area: item3;}
-#item4 {grid-area: item4;}
-#item5 {grid-area: item5;}
-#item6 {grid-area: item6;}
-#item7 {grid-area: item7;}
-#item8 {grid-area: item8;}
-/* once screen is less than 915px, changes from 2 column layout to 1 column layout */
-@media (max-width: 1100px) {
-    .grid-containerr {
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "item1"
-            "item2"
-            "item3"
-            "item4"
-            "item5"
-            "item6"
-            "item7"
-            "item8";
-    }
-
-    #headingp {
-        font-size: 130%;
-        /* min 1.5rem, preferred 5vw, max 3rem */
-        overflow: hidden;
-    }
+#item1 {
+  grid-area: item1;
 }
 
+#item2 {
+  grid-area: item2;
+}
+
+#item3 {
+  grid-area: item3;
+}
+
+#item4 {
+  grid-area: item4;
+}
+
+#item5 {
+  grid-area: item5;
+}
+
+#item6 {
+  grid-area: item6;
+}
+
+#item7 {
+  grid-area: item7;
+}
+
+#item8 {
+  grid-area: item8;
+}
+/*__________________________________ */
+/* once screen is less than 915px, changes from 2 column layout to 1 column layout */
+@media (max-width: 1100px) {
+  .grid-containerr {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6"
+      "item7"
+      "item8";
+  }
+
+  #headingp {
+    font-size: 130%;
+    /* min 1.5rem, preferred 5vw, max 3rem */
+    overflow: hidden;
+  }
+}
